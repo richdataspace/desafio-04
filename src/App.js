@@ -23,7 +23,7 @@ export default function App() {
     api.get(`repositories`).then(response => {
       setRepositories(response.data);
     })
-  })
+  }, []);
 
 
   // CHAMADA ASSINCRONA DA FUNCAO DO ADD REPOSITORY COM O METODO POST
